@@ -1,4 +1,4 @@
-import 'package:ecommerce_project/core/route/all_routes.dart';
+import 'package:ecommerce_project/route/all_routes.dart';
 import 'package:ecommerce_project/core/theme/color.dart';
 import 'package:ecommerce_project/firebase_options.dart';
 import 'package:ecommerce_project/module/splash/bindings/splash_bindlings.dart';

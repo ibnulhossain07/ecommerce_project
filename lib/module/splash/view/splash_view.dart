@@ -1,4 +1,6 @@
+import 'package:ecommerce_project/module/splash/controller/splash_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class SplashView extends StatelessWidget {
@@ -7,8 +9,9 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.put(SplashContrtoller());
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Theme.of(context).primaryColor.withOpacity(.3),
       body: Center(
         child: LoadingAnimationWidget.bouncingBall(
           color: Colors.white,
