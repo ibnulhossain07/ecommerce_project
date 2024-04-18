@@ -3,7 +3,6 @@ import 'package:ecommerce_project/core/util/utils.dart';
 import 'package:ecommerce_project/module/authentication/controller/authentication_controller.dart';
 import 'package:ecommerce_project/module/home/view/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:icons_plus/icons_plus.dart';
@@ -52,8 +51,8 @@ class AuthenticationView extends GetView<AuthenticationController> {
               height: 50,
               width: double.infinity,
               child: MaterialButton(
-                onPressed: () {
-                  Get.toNamed(HomeView.routeName);
+                onPressed: () async {
+                  controller.signInWithGoogle();
                 },
                 color: HexColor('#5131e8'),
                 child: Row(
