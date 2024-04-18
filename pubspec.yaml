@@ -46,6 +46,9 @@ dependencies:
   quickalert: any
   http: any
   loading_animation_widget: 
+  icons_plus: 
+  animated_text_kit: 
+  flutter_animate: 
 dev_dependencies:
   flutter_test:
     sdk: flutter

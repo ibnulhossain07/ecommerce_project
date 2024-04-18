@@ -1,3 +1,7 @@
+import 'package:ecommerce_project/module/authentication/bindings/authentication_bindings.dart';
+import 'package:ecommerce_project/module/authentication/view/authentication_view.dart';
+import 'package:ecommerce_project/module/favorite/bindings/favorite_bindings.dart';
+import 'package:ecommerce_project/module/favorite/view/favorite_view.dart';
 import 'package:ecommerce_project/module/home/bindings/home_bindings.dart';
 import 'package:ecommerce_project/module/home/view/home_view.dart';
 import 'package:ecommerce_project/module/splash/bindings/splash_bindlings.dart';
@@ -15,6 +19,16 @@ class AllRoutes {
       name: HomeView.routeName,
       page: () => const HomeView(),
       binding: HomeBindings(),
+    ),
+    GetPage(
+      name: AuthenticationView.routeName,
+      page: () => const AuthenticationView(),
+      binding: AuthenticationBindins(),
+    ),
+    GetPage(
+      name: FavoriteView.routeName,
+      page: () => const FavoriteView(),
+      binding: FavoriteBindings(),
     ),
   ];
 }
