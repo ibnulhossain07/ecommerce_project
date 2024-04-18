@@ -4,6 +4,8 @@ import 'package:ecommerce_project/module/favorite/bindings/favorite_bindings.dar
 import 'package:ecommerce_project/module/favorite/view/favorite_view.dart';
 import 'package:ecommerce_project/module/home/bindings/home_bindings.dart';
 import 'package:ecommerce_project/module/home/view/home_view.dart';
+import 'package:ecommerce_project/module/product/bindings/product_bindings.dart';
+import 'package:ecommerce_project/module/product/view/product_details.dart';
 import 'package:ecommerce_project/module/splash/bindings/splash_bindlings.dart';
 import 'package:ecommerce_project/module/splash/view/splash_view.dart';
 import 'package:get/get.dart';
@@ -29,6 +31,11 @@ class AllRoutes {
       name: FavoriteView.routeName,
       page: () => const FavoriteView(),
       binding: FavoriteBindings(),
+    ),
+    GetPage(
+      name: ProductDetailsView.routeName,
+      page: () => const ProductDetailsView(),
+      binding: ProductBindings(),
     ),
   ];
 }
